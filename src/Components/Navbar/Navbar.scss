@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+@font-face {
+  font-family: "Montreal";
+  src: url("../../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
+}
+
+$white: #fff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+$bg_color: #23259f;
+
+.navbar-components {
+  width: 100%;
+  height: 99px;
+  position: relative;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+
+  .background {
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .navbar-container {
+    position: absolute;
+    width: 85%;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-box {
+      .logo-contaner {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        .logo {
+          height: 70px;
+        }
+        .logo-text {
+          color: $white;
+          font-family: $text_font_bold;
+          font-size: 33px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .mid-box {
+        display: block;
+      .item-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .items {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          padding: 8px 16px;
+          color: $white;
+          font-family: $text_font;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        .items:hover {
+          font-weight: 700;
+          border-bottom: 1px solid $white;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .right-box {
+      .button-container {
+        .nav_button {
+          display: none;
+          height: 70px;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+
+        .contact-btn {
+          background: none;
+          color: $white;
+          border: 1px solid $white;
+          font-family: $text_font_bold;
+          width: 200px;
+          height: 70px;
+          border-radius: 40px;
+          font-size: 26px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        .contact-btn:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar-components {
+    .navbar-container {
+      width: 90%;
+      .left-box {
+        .logo-contaner {
+          .logo {
+            height: 60px;
+          }
+          .logo-text {
+            font-size: 28px;
+          }
+        }
+      }
+
+      .mid-box {
+        .item-container {
+          gap: 0.5rem;
+          .items {
+            font-size: 20px;
+            padding: 8px;
+          }
+        }
+      }
+
+      .right-box {
+        .button-container {
+          .contact-btn {
+            height: 60px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar-components {
+    .navbar-container {
+      width: 90%;
+      .left-box {
+        .logo-contaner {
+          .logo {
+            height: 70px;
+          }
+          .logo-text {
+            font-size: 33px;
+          }
+        }
+      }
+
+      .mid-box {
+        display: none;
+      }
+
+      .right-box {
+        .button-container {
+          .nav_button {
+            display: block;
+          }
+          .contact-btn {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .mobile-nav {
+      display: block;
+      position: absolute;
+      top: 99px;
+      right: 0;
+      width: 40%;
+      height: 90vh;
+      background-image: url("../../Images/Background/menuback.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .item-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        width: 89%;
+        gap: 2rem;
+
+        .items {
+          padding: 10px 0px;
+          border: 1px solid #eeeeee8f;
+          width: 90%;
+          justify-content: center;
+          border-radius: 5px;
+
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          padding: 8px 16px;
+          color: $white;
+          font-family: $text_font;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

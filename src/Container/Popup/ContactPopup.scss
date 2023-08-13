@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+@font-face {
+  font-family: "Montreal";
+  src: url("../../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
+}
+
+$white: #fff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+
+
+
+
+.contact-poup-components{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-size: 40px;
+    color: $white;
+    background-color: #eee;
+}
