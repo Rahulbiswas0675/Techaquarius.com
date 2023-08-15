@@ -19,10 +19,6 @@ $bg_color: #23259f;
   justify-content: center;
   z-index: 1000;
 
-  .background {
-    width: 100%;
-  }
-
   .mobile-nav {
     display: none;
   }
@@ -150,6 +146,7 @@ $bg_color: #23259f;
 
 @media screen and (max-width: 1080px) {
   .navbar-components {
+    transition: 1s;
     .navbar-container {
       width: 90%;
       .left-box {
@@ -178,17 +175,15 @@ $bg_color: #23259f;
         }
       }
     }
-
+  
     .mobile-nav {
       display: block;
       position: absolute;
       top: 99px;
       right: 0;
       width: 40%;
-      height: 90vh;
-      background-image: url("../../Images/Background/menuback.png");
-      background-repeat: no-repeat;
-      background-position: center;
+      height: 96vh;
+      background: linear-gradient(#141774, #23259F);
 
       .item-container {
         display: flex;
@@ -214,6 +209,112 @@ $bg_color: #23259f;
           font-weight: 400;
         }
       }
+    }
+
+    .hidden{
+      right: -40%;
+      transition: 1s;
+    }
+    .visible{
+      right: 0;
+      transition: 1s;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-components {
+    .mobile-nav {
+      width: 50%;
+    }
+    .visible{
+      right: 0;
+    }
+    .hidden{
+      right: -50%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-components {
+    .navbar-container {
+      .left-box {
+        .logo-contaner {
+          .logo {
+            height: 50px;
+          }
+          .logo-text {
+            font-size: 26px;
+          }
+        }
+      }
+      .right-box {
+        .button-container {
+          .nav_button {
+            height: 50px;
+            width: 50px;
+          }
+        }
+      }
+    }
+    .mobile-nav {
+      width: 60%;
+    }
+    .visible{
+      right: 0;
+    }
+    .hidden{
+      right: -60%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-components {
+    .mobile-nav {
+      width: 75%;
+    }
+    .visible{
+      right: 0;
+    }
+    .hidden{
+      right: -75%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-components {
+    .navbar-container {
+      .left-box {
+        .logo-contaner {
+          .logo {
+            height: 40px;
+          }
+          .logo-text {
+            font-size: 20px;
+          }
+        }
+      }
+      .right-box {
+        .button-container {
+          .nav_button {
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
+    }
+    .mobile-nav {
+      width: 100%;
+    }
+    .visible{
+      right: 0;
+    }
+    .hidden{
+      right: -100%;
     }
   }
 }

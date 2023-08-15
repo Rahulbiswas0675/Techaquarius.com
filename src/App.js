@@ -9,28 +9,30 @@ export const Storage = createContext();
 
 function App() {
   const [contactPopup, setContactPopup] = useState(false);
-  const [scrollIs, setScrollIs] = useState();
-
-  
-
+  const [scrollIs, setScrollIs] = useState(99);
 
   const ContactPopup_handler = (value) => {
     setContactPopup(value);
   };
 
-  function scroll_Is(e){
-    console.log(e.target)
-  }
+  const scroll_handler = (value) => {
+    setScrollIs(value);
+  };
+
 
   return (
-    <div className="App" id="App" onScroll={(e) => scroll_Is(e)}>
-      <Storage.Provider value={{
-        // Post Data
-        PostContactPopup : contactPopup,
+    <div className="App" id="App">
+      <Storage.Provider
+        value={{
+          // Post Data
+          PostContactPopup: contactPopup,
+          postScrollIs: scrollIs,
 
-        // Get Data
-        GetContactPopup : ContactPopup_handler,
-      }}>
+          // Get Data
+          GetContactPopup: ContactPopup_handler,
+          getScrollIs: scroll_handler,
+        }}
+      >
         <Navbar />
         <HomePage />
 

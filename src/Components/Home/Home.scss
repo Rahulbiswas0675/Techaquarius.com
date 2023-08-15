@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+
 @font-face {
   font-family: "Montreal";
   src: url("../../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
@@ -7,13 +8,124 @@
 $white: #fff;
 $text_font: "Montreal";
 $text_font_bold: "Unbounded";
+$dark_blue : #23259F;
 
+.home-components {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
-.home-components{
+  img {
     width: 100%;
+  }
 
-    img{
-        width: 100%;
+  .home-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 180px;
+
+    .heading {
+      margin: 0;
+      color: $white;
+      font-family: $text_font;
+      text-align: center;
+      font-size: 75px;
+      font-weight: 500;
+      line-height: 125%;
     }
-    height: 400vh;
+  }
+
+  .contact-div {
+    right: 10%;
+    top: 40%;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .contact_btn {
+      margin: 0;
+      color: $dark_blue;
+      font-size: 36px;
+      font-family: $text_font;
+      font-weight: 500;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+
+      .icons {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .loop-anim-div {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+
+    .scroll-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      .scroll-roll {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        animation: rolling 10s linear infinite;
+      }
+
+      .hand-img {
+        width: 80px;
+        border-radius: 50%;
+        animation: heartbeat 2s linear infinite;
+      }
+
+      @keyframes rolling {
+        to {
+          transform: rotate(0deg);
+        }
+
+        from {
+          transform: rotate(360deg);
+        }
+
+
+      }
+
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.2);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+
+      }
+    }
+  }
+
+
 }
+
+// @media screen and (max-width : 1900px) {
+  
+// }
