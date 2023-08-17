@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext } from "react";
 import "./App.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
-
+import ContactPage from './Pages/ContactPage';
 import ContactPopup from "./Container/Popup/ContactPopup";
 
 export const Storage = createContext();
@@ -35,6 +35,8 @@ function App() {
       >
         <Navbar />
         <HomePage />
+
+        <ContactPage/>
 
         {contactPopup ? <ContactPopup /> : null}
       </Storage.Provider>

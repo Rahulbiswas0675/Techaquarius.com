@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import Swal from 'sweetalert2';
 import CloseIcon from '@mui/icons-material/Close';
-
+import backImg from '../../Images/Background/contactPopup.png';
 import { Storage } from '../../App';
 
 const schema = yup.object({
@@ -43,6 +43,7 @@ function ContactPopup() {
 
   return (
     <div className='contact-poup-components'>
+      <img src={backImg} alt="backImg" className='backImg'/>
 
       <div className="popup-container">
 
