@@ -1,23 +1,15 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import "./App.scss";
-import Navbar from "./Components/Navbar/Navbar";
-import HomePage from "./Pages/HomePage";
-import ContactPage from './Pages/ContactPage';
+import 'animate.css';
+import MainPage from "./MainPage/MainPage";
 import ContactPopup from "./Container/Popup/ContactPopup";
-
+import Celebration from "./Container/Celebration/Celebration";
 export const Storage = createContext();
 
 function App() {
   const [contactPopup, setContactPopup] = useState(false);
   const [scrollIs, setScrollIs] = useState(99);
-
-  const ContactPopup_handler = (value) => {
-    setContactPopup(value);
-  };
-
-  const scroll_handler = (value) => {
-    setScrollIs(value);
-  };
+  const [celebrate, setCelebrate] = useState(false);
 
 
   return (
@@ -29,15 +21,12 @@ function App() {
           postScrollIs: scrollIs,
 
           // Get Data
-          GetContactPopup: ContactPopup_handler,
-          getScrollIs: scroll_handler,
+          GetContactPopup: setContactPopup,
+          getScrollIs: setScrollIs,
+          getCelebrate : setCelebrate,
         }}
       >
-        <Navbar />
-        <HomePage />
-
-        <ContactPage/>
-
+        {celebrate ? <MainPage /> : <Celebration/>}
         {contactPopup ? <ContactPopup /> : null}
       </Storage.Provider>
     </div>

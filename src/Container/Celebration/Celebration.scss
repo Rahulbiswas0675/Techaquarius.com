@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+
+@font-face {
+    font-family: "Montreal";
+    src: url("../../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
+}
+
+$white: #ffffff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+$bg_color: #23259f;
+
+
+.celebration-components {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .background-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .timer-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .head-1 {
+            font-size: 54px;
+            font-weight: 600;
+            font-family: $text_font;
+            color: $white;
+            letter-spacing: 5px;
+            text-shadow: 4px 4px 4px black;
+            letter-spacing: 10px;
+            animation-duration: 3s;
+        }
+
+
+        .head-2 {
+            margin: 0;
+            font-size: 120px;
+            font-weight: 700;
+            font-family: $text_font;
+            color: rgb(241, 200, 86);
+            text-shadow: 4px 4px 4px black;
+            animation: zoomAni 3s linear infinite;
+        }
+
+        .flex-timer {
+            display: none;
+        }
+
+        @keyframes zoomAni {
+            0% {
+                letter-spacing: 6px;
+            }
+
+            50% {
+                letter-spacing: 25px;
+            }
+
+            100% {
+                letter-spacing: 6px;
+            }
+        }
+
+        .head-3 {
+            font-size: 26px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .head-4 {
+            // margin: 0;
+            font-size: 26px;
+            font-weight: 500;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            h3 {
+                margin: 0;
+                font-size: 76px;
+                font-weight: 700;
+                font-family: $text_font;
+                margin-top: -30px;
+            }
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            gap: 0.5rem;
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .brand {
+                margin: 0;
+                font-size: 46px;
+                font-family: $text_font;
+                font-weight: 700;
+                color: $white;
+
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width : 1280px) {
+    .celebration-components {
+        .timer-container {
+            z-index: 10;
+
+            .head-1 {
+                font-size: 40px;
+            }
+
+            .head-2 {
+                font-size: 80px;
+            }
+
+            .head-3 {
+                font-size: 26px;
+            }
+
+            .head-4 {
+                font-size: 26px;
+
+                h3 {
+                    font-size: 56px;
+                    margin-top: -30px;
+                }
+            }
+
+            .company {
+                .logo {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .brand {
+                    font-size: 38px;
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .celebration-components {
+        .timer-container {
+            .head-1 {
+                font-size: 36px;
+            }
+
+            .head-2 {
+                font-size: 60px;
+            }
+
+            .head-3 {
+                font-size: 20px;
+            }
+
+            .head-4 {
+                font-size: 20px;
+
+                h3 {
+                    font-size: 36px;
+                    margin-top: -10px;
+                }
+            }
+
+            .company {
+                .logo {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .brand {
+                    font-size: 30px;
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .celebration-components {
+        .timer-container {
+            .head-1 {
+                font-size: 30px;
+            }
+
+            .head-2 {
+                font-size: 60px;
+            }
+
+            .head-3 {
+                font-size: 18px;
+            }
+
+            .head-4 {
+                font-size: 18px;
+
+                h3 {
+                    font-size: 30px;
+                    margin-top: -10px;
+                }
+            }
+
+            .company {
+                .logo {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .brand {
+                    font-size: 30px;
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width : 560px) {
+    .celebration-components {
+        .timer-container {
+            .head-1 {
+                font-size: 30px;
+            }
+
+            .head-2 {
+                font-size: 50px;
+            }
+
+            .head-3 {
+                font-size: 16px;
+            }
+
+            .flex-timer {
+                display: block;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                gap: 1rem;
+                width: 90%;
+
+                .heading {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: $text_font;
+                    color: $white;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .bold-text {
+                    margin: 0;
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: $text_font;
+                    color: $white;
+                    display: flex;
+                    gap: 0.3rem;
+
+                    span {
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        margin-top: 8px;
+                    }
+                }
+
+
+            }
+
+            .head-4 {
+                display: none;
+                font-size: 16px;
+
+                h3 {
+                    font-size: 26px;
+                    margin-top: -6px;
+                }
+            }
+
+            .company {
+                .logo {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                .brand {
+                    font-size: 26px;
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width : 410px) {
+    .celebration-components {
+        .timer-container {
+
+            .flex-timer {
+                .heading{
+                    width: 90%;
+                    text-align: left;
+                }
+                .bold-text {
+                    text-align: center;
+                    width: 40%;
+                }
+            }
+
+            .head-4 {
+                display: none;
+                font-size: 16px;
+
+                h3 {
+                    font-size: 26px;
+                    margin-top: -6px;
+                }
+            }
+
+            .company {
+                .logo {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                .brand {
+                    font-size: 26px;
+
+                }
+
+            }
+
+        }
+    }
+}
