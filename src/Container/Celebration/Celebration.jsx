@@ -3,13 +3,22 @@ import backImg from '../../Images/Background/contactPopup.png';
 import Logo from '../../Images/Logo/Logo.png';
 import './Celebration.scss';
 import { Storage } from '../../App';
+import Celebrate from '../Celebrate/Celebrate';
+import CelebrateBoom from '../Celebrate/CelebrateBoom';
 
 function Celebration() {
     const { getCelebrate } = useContext(Storage);
+
+    // this for real date
     const targetDate = new Date('2023-09-20T00:00:00');
+
+    // this for testing date
+    // const targetDate = new Date('2023-08-22T00:00:00');
+
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+
     const [celebrateActive, setCelebriteActive] = useState(false);
-    
+
     useEffect(() => {
         const interval = setInterval(() => {
             setTimeRemaining(calculateTimeRemaining());
@@ -35,9 +44,15 @@ function Celebration() {
 
         return { days, hours, minutes, seconds };
     }
+    function celibrare() {
+        setTimeout(() => {
+            getCelebrate(false);
+        }, 10000)
+    }
     useEffect(() => {
         if (timeRemaining.days === 0 && timeRemaining.hours === 0 && timeRemaining.minutes === 0 && timeRemaining.seconds === 0) {
             setCelebriteActive(true);
+            celibrare();
         }
     }, [timeRemaining.seconds])
 
@@ -66,13 +81,29 @@ function Celebration() {
                         </div>
                     </div>
                 ) : (
-                    null
+                    <div className="timer-container">
+                        <CelebrateBoom isExploding={celebrateActive} />
+                        <div className="wellcome-page">
+                            <div className="company  animate__animated  animate__zoomInDown">
+                                <img src={Logo} alt="Techaquarius" className="logo" />
+                                <h3 className="brand">Techaquarius</h3>
+                            </div>
+
+                            <div className="content-box animate__animated  animate__zoomInDown">
+                                <h1 className='tags'>Your Next Digital Partner <br /> for Web, App, SEO , UI/UX Design <br />  & AI Solutions</h1>
+                            </div>
+
+                            <div className="thankyou-box animate__animated  animate__zoomInDown">
+                                <h1 className='message'>Thank You For Visiting Our Website</h1>
+                            </div>
+                        </div>
+                    </div>
                 )
             }
 
-
-
-
+            {
+                celebrateActive ? <Celebrate isExploding={celebrateActive} className="celebraton-boom" /> : null
+            }
 
         </div>
     )
