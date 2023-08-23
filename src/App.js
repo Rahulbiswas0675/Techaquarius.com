@@ -14,7 +14,7 @@ function App() {
   const [scrollIs, setScrollIs] = useState(99);
 
   //if celebration is true, then showing celebrate page, other then showing mainpage.
-  const [celebrate, setCelebrate] = useState(true);
+  const [celebrate, setCelebrate] = useState(false);
 
 
   return (
@@ -29,6 +29,7 @@ function App() {
           GetContactPopup: setContactPopup,
           getScrollIs: setScrollIs,
           getCelebrate : setCelebrate,
+
         }}
       >
         {/* for main page or celebration page */}
