@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+
+@font-face {
+    font-family: "Montreal";
+    src: url("../../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
+}
+
+$white: #ffffff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+$bg_color: #23259f;
+$light_blue : #ECF2FE;
+$border_blue : #5748C9;
+$shadow : #eee;
+$light_black : #666867;
+$mid_black : #2C2C2C;
+
+.review-components {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .review-continer {
+        margin: 8rem 0;
+        width: 80%;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        .left-box {
+            width: 38%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .header-box {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .client-text {
+                    margin: 0;
+                    font-size: 34px;
+                    font-family: $text_font_bold;
+                    font-weight: 500;
+                    padding: 4px;
+                    width: 150px;
+                    height: 150px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    color: $white;
+                    background-color: $border_blue;
+                    border-radius: 50%;
+                }
+
+                .review-text {
+                    margin: 0;
+                    font-size: 34px;
+                    font-family: $text_font_bold;
+                    font-weight: 600;
+                    color: $mid_black;
+                }
+            }
+
+            .review-para {
+                margin: 0;
+                font-size: 20px;
+                color: $mid_black;
+                padding: 4px 8px;
+                font-weight: 500;
+                font-family: $text_font;
+            }
+
+            .btn-div {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                .btn-item {
+                    margin: 0;
+                    width: 70px;
+                    height: 70px;
+                    padding: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #FCFBFE;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    box-shadow: 0px 3.36364px 10.76364px -1.68182px rgba(19, 16, 34, 0.03), 0px 7.4px 20.18182px -1.68182px rgba(19, 16, 34, 0.06);
+                    transition: 0.3s;
+
+                    .review-btn {
+                        font-size: 34px;
+                    }
+                }
+
+                .btn-item:hover {
+                    background-color: $border_blue;
+                    color: $white;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .right-box {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .clients-item {
+                margin-top: 5rem;
+                width: 22rem;
+                height: 25rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 27.348px;
+                background: #FFF;
+                box-shadow: 0px 4px 35px 0px rgba(44, 44, 44, 0.10);
+                position: relative;
+
+                .ThumbsUpDownIcon{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 15rem;
+                    color: $light_blue;
+                }
+
+
+                .text-box{
+                    text-align: center;
+                    display: flex;
+                    margin-top: -7rem;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                    .name{
+                        margin: 0;
+                        font-size: 26px;
+                        font-weight: 600;
+                        font-family: $text_font;
+                        color: $mid_black;
+                        text-align: center;
+                    }
+
+                    .tags{
+                        margin: 0;
+                        padding: 0 0 10px 0;
+                        color: $light_black;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: center;
+                        border-bottom: 1px solid $light_black;
+                    }
+                    .stars{
+                        display: flex;
+                        align-items: center;
+                        .star{
+                            color: #FFBA08;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
+            }
+
+            .clients-image {
+                margin-left: -7rem;
+                margin-top: 5rem;
+                width: 200px;
+                height: 200px;
+                align-items: center;
+                z-index: 15;
+                border-radius: 50%;
+                box-shadow: 0px 3.36364px 10.76364px -1.68182px rgba(19, 16, 34, 0.03), 0px 7.4px 20.18182px -1.68182px rgba(19, 16, 34, 0.06);
+                .dp-item {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .clients-review {
+                width: 48%;
+                margin-top: 3rem;
+                .review-text {
+                    margin: 0;
+                    font-size: 18px;
+                    font-family: $text_font;
+                    font-weight: 400;
+                    color: $light_black;
+                }
+            }
+        }
+    }
+}

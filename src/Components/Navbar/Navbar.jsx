@@ -46,12 +46,11 @@ function Navbar() {
 
                 <div className={`mid-box ${menuBtn}`}>
                     <div className="item-container">
-                        <a href="#home" className="items">Home</a>
-                        <a href="#about" className="items">About</a>
-                        <a href="#project" className="items">Projects</a>
-                        <a href="#pricing" className="items">Pricing</a>
-                        <a href="#review" className="items">Review</a>
-                        <a href="#contact" className="items">Contact</a>
+                        <a href="/#home" className="items">Home</a>
+                        <a href="/#about" className="items">About</a>
+                        <a href="/#project" className="items">Projects</a>
+                        <a href="/#review" className="items">Review</a>
+                        <a href="/#contact" className="items">Contact</a>
                     </div>
 
                 </div>
@@ -69,7 +68,6 @@ function Navbar() {
                     <a href="#home" className="items">Home</a>
                     <a href="#about" className="items">About</a>
                     <a href="#project" className="items">Projects</a>
-                    <a href="#pricing" className="items">Pricing</a>
                     <a href="#review" className="items">Review</a>
                     <a href="#contact" className="items">Contact</a>
                 </div>

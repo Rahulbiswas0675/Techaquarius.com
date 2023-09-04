@@ -10,10 +10,10 @@ function Celebration() {
     const { getCelebrate } = useContext(Storage);
 
     // this for real date
-    const targetDate = new Date('2023-09-20T00:00:00');
+    // const targetDate = new Date('2023-09-20T00:00:00');  
 
     // this for testing date
-    // const targetDate = new Date('2023-08-22T00:00:00');
+    const targetDate = new Date('2023-08-22T00:00:00'); 
 
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 

@@ -58,13 +58,14 @@ function Footer() {
                 </div>
 
                 <div className="mid-container">
-                    {/* <div className='table'>
-                        <h4 className='thead'>Upcoming Projects</h4>
+                    <div className='table'>
+                        <h4 className='thead'>Career at Techaquarius</h4>
                         <div className='tbody'>
-                            <a href="">Energiccropscience</a>
-                            <a href="">Ayopark</a>
+                            <a href="/career">Career</a>
+                            <a href="/career/internship">Internship</a>
+                            {/* <a href=""></a> */}
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
 

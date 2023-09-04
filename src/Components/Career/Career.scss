@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+
+@font-face {
+    font-family: "Montreal";
+    src: url("../../Fonts//neue-montreal-font//NeueMontreal-Bold.otf");
+}
+
+$white: #ffffff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+$bg_color: #23259f;
+$light_blue : #ECF2FE;
+$border_blue : #5748C9;
+$shadow : #eee;
+$light_black : #666867;
+$mid_black : #2C2C2C;
+
+
+.Career-components {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+    
+    .backgroundimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carre-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        // border: 1px solid #eee;
+    }
+}

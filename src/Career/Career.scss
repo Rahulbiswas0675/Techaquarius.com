@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+
+@font-face {
+    font-family: "Montreal";
+    src: url("../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
+}
+
+$white: #ffffff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+$bg_color: #23259f;
+$light_blue : #ECF2FE;
+$border_blue : #5748C9;
+$shadow : #eee;
+$light_black : #666867;
+$mid_black : #2C2C2C;
+
+
+.career-container {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .backgroundImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carrer-div {
+        position: absolute;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .heading {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            font-size: 26px;
+            font-family: $text_font_bold;
+            color: $light_blue;
+            font-weight: 600;
+        }
+
+        .pera {
+            margin: 0;
+            margin-top: 0.5rem;
+            width: 40%;
+            text-align: center;
+            font-family: $text_font;
+            font-size: 16px;
+            color: $light_blue;
+        }
+
+
+        .form-container {
+            width: 50%;
+            margin-top: 1.5rem;
+            border: 1px solid $shadow;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .input-field {
+                font-size: 18px;
+                color: $mid_black;
+                height: 3rem;
+                border-radius: 35px;
+                padding: 4px 15px;
+                border: none;
+                font-family: $text_font;
+            }
+
+            .text-area,
+            .input-field:focus {
+                outline: none;
+            }
+
+            .text-area {
+                width: 100%;
+                min-height: 8rem;
+                max-height: 8rem;
+                font-size: 18px;
+                color: $mid_black;
+                border-radius: 20px;
+                padding: 15px;
+                border: none;
+                font-family: $text_font;
+            }
+
+
+            .group {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                .input-field-inner {
+                    width: 48%;
+                    font-size: 18px;
+                    font-family: $text_font;
+                    color: $mid_black;
+                    height: 3rem;
+                    border-radius: 35px;
+                    padding: 4px 15px;
+                    border: none;
+                }
+
+                .input-field-inner:focus {
+                    outline: none;
+                }
+
+                .input-field-inner::-webkit-inner-spin-button {
+                    display: none;
+                }
+
+            }
+
+            .lable {
+                color: $light_blue;
+                font-size: 18px;
+                font-family: $text_font;
+            }
+
+            .select-field-inner {
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                color: $mid_black;
+                height: 3rem;
+                border-radius: 35px;
+                border: none;
+                font-family: $text_font;
+            }
+
+            .select-field-inner:focus {
+                outline: none;
+            }
+
+            #formGridCheckbox {
+                font-size: 18px;
+                font-family: $text_font;
+                color: $light_blue;
+            }
+
+            .btn {
+                height: 3rem;
+                font-size: 18px;
+                font-family: $text_font;
+                font-weight: 600;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .career-container {
+        .carrer-div {
+            .pera{
+                width: 60%;
+            }
+            .form-container {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1080px) {
+    .career-container {
+        .carrer-div {
+            .pera{
+                width: 80%;
+            }
+            .form-container {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .career-container {
+        .carrer-div {
+            .pera{
+                width: 100%;
+            }
+            .form-container {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .career-container {
+        .carrer-div {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .career-container {
+        overflow: scroll;
+        .backgroundImg{
+            position: fixed;
+            height: 100vh;
+        }
+        .carrer-div {
+            top: 1rem;
+            .heading {
+                font-size: 18px;
+            }
+    
+            .pera {
+                font-size: 14px;
+            }
+            .form-container {
+               .group{
+                flex-direction: column;
+                gap: 1.5rem;
+                .input-field-inner{
+                    width: 100%;
+                }
+               }
+            }
+        }
+    }
+}

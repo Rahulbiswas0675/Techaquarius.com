@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Unbounded&display=swap");
+
+@font-face {
+    font-family: "Montreal";
+    src: url("../../Fonts//neue-montreal-font/NeueMontreal-Medium.otf");
+}
+
+$white: #ffffff;
+$text_font: "Montreal";
+$text_font_bold: "Unbounded";
+$bg_color: #23259f;
+$light_blue : #ECF2FE;
+$border_blue : #5748C9;
+$shadow : #eee;
+$light_black : #666867;
+$mid_black : #2C2C2C;
+
+
+.project-components {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .project-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+
+        .top-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left-box {
+                width: 45%;
+
+                .heading {
+                    font-size: 38px;
+                    font-weight: 600;
+                    font-family: $text_font;
+                    margin: 0;
+                    letter-spacing: 4px;
+                    color: $light_black;
+                }
+
+                .designimg {
+                    margin-left: 4rem;
+                    // margin-top: -0.5rem;
+                }
+            }
+
+            .right-box {
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+
+                .our-text {
+                    width: 150px;
+                    height: 150px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding: 6px;
+                    background-color: $border_blue;
+                    color: $white;
+                    border-radius: 50%;
+
+                    .text-our {
+                        margin: 0;
+                        font-family: $text_font;
+                        font-size: 48px;
+                    }
+                }
+
+                .project-text {
+                    margin: 0;
+                    font-family: $text_font;
+                    font-size: 48px;
+                    color: $mid_black;
+                }
+
+                .fireimg {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .project-container {
+            // border: 1px solid #eee;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .heading{
+                margin: 0;
+                font-family: $text_font;
+                font-size: 18px;
+                font-weight: 600;
+                color: $light_black;
+                letter-spacing: 2px;
+            }
+
+            .items{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 4rem;
+            }
+
+            .project-box {
+                width: 30%;
+                padding: 2rem;
+                background-color: #E7D8C9;
+                border-radius: 12px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .projectImg {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+
+                .buttons-box {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100px;
+                    height: 100px;
+                    padding: 16px;
+                    background-color: $border_blue;
+                    border-radius: 100% 0px 15px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 10px;
+                    display: none;
+                    transition: 1s;
+
+
+
+                    .view-btn {
+                        position: absolute;
+                        color: $light_blue;
+                        font-size: 50px;
+                        bottom: 15px;
+                        right: 15px;
+                        transform: rotate(40deg);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .project-box:hover .buttons-box {
+                transition: 1s;
+                display: block;
+            }
+        }
+    }
+}
