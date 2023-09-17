@@ -12,9 +12,9 @@ function MainPage() {
             <Navbar />
             <HomePage />
             <AboutPage/>
-            <ProjectsPage />
-            <ReviewPage/>
-            <ContactPage />
+            {/* <ProjectsPage /> */}
+            {/* <ReviewPage/> */}
+            {/* <ContactPage /> */}
             <FooterPage />
         </>
     )

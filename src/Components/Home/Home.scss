@@ -126,6 +126,305 @@ $dark_blue : #23259F;
 
 }
 
-// @media screen and (max-width : 1900px) {
-  
-// }
+@media screen and (max-width : 1650px) {
+  .home-components {
+    .home-container {
+      top: 150px;
+      .heading {
+        font-size: 60px;
+      }
+    }
+
+    .contact-div {
+      right: 8%;
+      top: 35%;
+      width: 200px;
+      height: 200px;
+
+      .contact_btn {
+        font-size: 28px;
+
+        .icons {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 170px;
+          height: 170px;
+        }
+        .hand-img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 1440px) {
+  .home-components {
+    .home-container {
+      top: 150px;
+      .heading {
+        font-size: 50px;
+      }
+    }
+
+    .contact-div {
+      right: 8%;
+      top: 35%;
+      width: 170px;
+      height: 170px;
+
+      .contact_btn {
+        font-size: 24px;
+
+        .icons {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 170px;
+          height: 170px;
+        }
+        .hand-img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 1280px) {
+  .home-components {
+    .home-container {
+      top: 110px;
+      .heading {
+        font-size: 50px;
+      }
+    }
+
+    .contact-div {
+      right: 8%;
+      top: 35%;
+      width: 150px;
+      height: 150px;
+
+      .contact_btn {
+        font-size: 22px;
+
+        .icons {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 170px;
+          height: 170px;
+        }
+        .hand-img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 1080px) {
+  .home-components {
+    .home-container {
+      top: 100px;
+      .heading {
+        font-size: 40px;
+      }
+    }
+
+    .contact-div {
+      right: 8%;
+      top: 35%;
+      width: 130px;
+      height: 130px;
+
+      .contact_btn {
+        font-size: 18px;
+
+        .icons {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 120px;
+          height: 120px;
+        }
+        .hand-img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 950px) {
+  .home-components {
+    .home-container {
+      top: 100px;
+      .heading {
+        font-size: 30px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .home-components {
+    .home-container {
+      top: 100px;
+      .heading {
+        font-size: 26px;
+      }
+    }
+
+    .contact-div {
+      right: 8%;
+      top: 35%;
+      width: 100px;
+      height: 100px;
+
+      .contact_btn {
+        font-size: 16px;
+
+        .icons {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 100px;
+          height: 100px;
+        }
+        .hand-img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 650px) {
+  .home-components {
+    .home-container {
+      top: 100px;
+      .heading {
+        font-size: 26px;
+      }
+    }
+
+    .contact-div {
+      right: 4%;
+      top: 55%;
+      width: 80px;
+      height: 80px;
+
+      .contact_btn {
+        font-size: 14px;
+
+        .icons {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 80px;
+          height: 80px;
+        }
+        .hand-img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 550px) {
+  .home-components {
+    .home-container {
+      top: 90px;
+      .heading {
+        font-size: 20px;
+      }
+    }
+
+    .contact-div {
+      right: 4%;
+      top: 55%;
+      width: 70px;
+      height: 70px;
+
+      .contact_btn {
+        font-size: 12px;
+
+        .icons {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .loop-anim-div {
+      left: 10%;
+      bottom: 15%;
+      .scroll-box {
+        .scroll-roll {
+          width: 70px;
+          height: 70px;
+        }
+        .hand-img {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 425px) {
+  .home-components {
+    .home-container {
+      top: 70px;
+      .heading {
+        font-size: 18px;
+      }
+    }
+  }
+}

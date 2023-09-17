@@ -57,16 +57,15 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="mid-container">
+                {/* <div className="mid-container">
                     <div className='table'>
                         <h4 className='thead'>Career at Techaquarius</h4>
                         <div className='tbody'>
                             <a href="/career">Career</a>
                             <a href="/career/internship">Internship</a>
-                            {/* <a href=""></a> */}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="blank-border"></div>
