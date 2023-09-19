@@ -8,8 +8,9 @@ import projectImg from '../../Images/Projects/roadserve-hero.png';
 
 function Project() {
   return (
-    <div className='project-components'>
+    <div className='project-components' id='project'>
       <div className="project-container">
+
         <div className="top-container">
           <div className="left-box">
             <h3 className="heading">POPULAR DESIGN</h3>
@@ -24,7 +25,7 @@ function Project() {
           </div>
         </div>
 
-        <div className="project-container">
+        <div className="project-items-container">
           <h4 className="heading">Recent Work -</h4>
           <div className="items">
             {
@@ -43,7 +44,7 @@ function Project() {
 
 
 
-        <div className="project-container">
+        <div className="project-items-container">
           <h4 className="heading">Popular Design -</h4>
           <div className="items">
             {

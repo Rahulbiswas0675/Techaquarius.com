@@ -12,7 +12,7 @@ function Review() {
     <div className='review-components'>
         <div className="review-continer">
 
-            <div className="left-box">
+            {/* <div className="left-box">
                 <div className="header-box">
                     <h3 className="client-text">Client</h3>
                     <h3 className="review-text">Review</h3>
@@ -57,7 +57,7 @@ function Review() {
                     <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi excepturi, voluptatem eum laboriosam eveniet rem inventore, officia officiis totam commodi error. Corporis rerum accusantium, repellendus sed nostrum recusandae veritatis.</p>
                 </div>
 
-            </div>
+            </div> */}
 
         </div>
     </div>

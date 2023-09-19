@@ -17,7 +17,7 @@ function Navbar() {
     const slider_handler = () => {
         if (sideBar === 'visible') {
             setSideBar("hidden");
-            getScrollIs(90);
+            getScrollIs(0);
         } else {
             setSideBar("visible");
             getScrollIs(100);
@@ -25,7 +25,7 @@ function Navbar() {
     }
 
     useEffect(() => {
-        if (postScrollIs >= 100) {
+        if (postScrollIs) {
             setBackColor("#141774");
         } else {
             setBackColor("transparent");
@@ -49,7 +49,7 @@ function Navbar() {
                         <a href="/#home" className="items">Home</a>
                         <a href="/#about" className="items">About</a>
                         <a href="/#project" className="items">Projects</a>
-                        <a href="/#review" className="items">Review</a>
+                        {/* <a href="/#review" className="items">Review</a> */}
                         <a href="/#contact" className="items">Contact</a>
                     </div>
 
@@ -68,7 +68,7 @@ function Navbar() {
                     <a href="#home" className="items">Home</a>
                     <a href="#about" className="items">About</a>
                     <a href="#project" className="items">Projects</a>
-                    <a href="#review" className="items">Review</a>
+                    {/* <a href="#review" className="items">Review</a> */}
                     <a href="#contact" className="items">Contact</a>
                 </div>
             </div>

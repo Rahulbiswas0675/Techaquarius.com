@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './ContactPopup.scss';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -17,20 +17,55 @@ const schema = yup.object({
 
 
 function ContactPopup() {
-  const {GetContactPopup} = useContext(Storage);
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { GetContactPopup } = useContext(Storage);
+  const [spinner, setSpinner] = useState(false);
+  const { register, handleSubmit, reset } = useForm({
     resolver: yupResolver(schema)
   });
 
   const onSubmit = data => {
+    setSpinner(true);
+    const bodyIs = `
+            Get In Touch
+            <br/>
+            <br/>
+            Name : ${data.name},
+            <br/>
+            Email : ${data.email},
+            <br/>
+            Number : ${data.number},
+            <br/>
+            Message : ${data.message},
+        `;
+    const config = {
+      SecureToken: "6cbc34d2-480f-483d-adea-157040d50aa4",
+      To: 'support@techaquarius.com',
+      From: 'techaquariusofficial@gmail.com',
+      Subject: "Get In Touch",
+      Body: bodyIs,
+    }
+
     if (data.number.length === 10) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Thank you',
-        text: 'Send Successfully!',
-      })
+      if (window.Email) {
+        window.Email.send(config)
+          .then(() => {
+            Swal.fire(
+              'Thank You!',
+              'Our Team Will Contact You Soon!',
+              'success'
+            )
+            reset();
+            setSpinner(false);
+          })
+          .catch((err) => {
+            console.log(err);
+            setSpinner(false);
+          });
+      }
+      reset();
       GetContactPopup(false);
-    } else{
+    } else {
+      setSpinner(false);
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -43,12 +78,12 @@ function ContactPopup() {
 
   return (
     <div className='contact-poup-components'>
-      <img src={backImg} alt="backImg" className='backImg'/>
+      <img src={backImg} alt="backImg" className='backImg' />
 
       <div className="popup-container">
 
         <form onSubmit={handleSubmit(onSubmit)} className='form-container'>
-          <CloseIcon className='close-Icon' onClick={() => GetContactPopup(false)}/>
+          <CloseIcon className='close-Icon' onClick={() => GetContactPopup(false)} />
 
           <h3 className="heading">Let’s Work Together</h3>
 
@@ -60,7 +95,7 @@ function ContactPopup() {
 
           <textarea name="message"  {...register("message")} className='message-box' placeholder='Your Message' required></textarea>
 
-          <button className='submit-btn' type='submit'>Send</button>
+          <button className='submit-btn' type='submit'>{spinner ? "Sending..." : 'SEND'}</button>
 
         </form>
 

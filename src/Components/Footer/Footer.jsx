@@ -27,11 +27,11 @@ function Footer() {
                     </div>
 
                     <div className="social-links">
-                        <a href="" target=''><FacebookIcon className='icons' /></a>
-                        <a href=""><InstagramIcon className='icons' /></a>
-                        <a href=""><TwitterIcon className='icons' /></a>
-                        <a href=""><LinkedInIcon className='icons' /></a>
-                        <a href=""><WhatsAppIcon className='icons' /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61550253659608" target='blank'><FacebookIcon className='icons' /></a>
+                        <a href="https://www.instagram.com/techaquarius_official/?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target='blank'><InstagramIcon className='icons' /></a>
+                        <a href="https://twitter.com/techaquarius?t=NEFhprs2NKw95JuR7TmsMA&s=09" target='blank'><TwitterIcon className='icons' /></a>
+                        <a href="https://www.linkedin.com/in/techaquarius-it-solution-486551289/" target='blank'><LinkedInIcon className='icons' /></a>
+                        <a href="https://wa.me/8595457520" target='blank'><WhatsAppIcon className='icons' /></a>
                     </div>
                 </div>
                 <div className="mid-container">
@@ -49,23 +49,14 @@ function Footer() {
 
                 <div className="mid-container">
                     <div className='table'>
-                        <h4 className='thead'>Our Live Projects</h4>
+                        <h4 className='thead'>Our Best Projects</h4>
                         <div className='tbody'>
-                            <a href="">Energiccropscience</a>
-                            <a href="">Ayopark</a>
+                            <a href="https://energiccropscience.com/">Energiccropscience</a>
+                            <a href="https://ayopark.com/">Ayopark</a>
                         </div>
                     </div>
                 </div>
 
-                {/* <div className="mid-container">
-                    <div className='table'>
-                        <h4 className='thead'>Career at Techaquarius</h4>
-                        <div className='tbody'>
-                            <a href="/career">Career</a>
-                            <a href="/career/internship">Internship</a>
-                        </div>
-                    </div>
-                </div> */}
             </div>
 
             <div className="blank-border"></div>

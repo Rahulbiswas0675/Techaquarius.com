@@ -32,9 +32,11 @@ $bg_color: #23259f;
     justify-content: space-between;
 
     .left-box {
+      
       .logo-contaner {
         text-decoration: none;
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 0.5rem;
         cursor: pointer;
@@ -42,6 +44,7 @@ $bg_color: #23259f;
           height: 70px;
         }
         .logo-text {
+          margin: 0;
           color: $white;
           font-family: $text_font_bold;
           font-size: 33px;
@@ -152,10 +155,10 @@ $bg_color: #23259f;
       .left-box {
         .logo-contaner {
           .logo {
-            height: 70px;
+            height: 60px;
           }
           .logo-text {
-            font-size: 33px;
+            font-size: 28px;
           }
         }
       }
@@ -168,6 +171,8 @@ $bg_color: #23259f;
         .button-container {
           .nav_button {
             display: block;
+            width: 60px;
+            height: 60px;
           }
           .contact-btn {
             display: none;

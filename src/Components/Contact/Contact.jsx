@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Contact.scss';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -8,7 +8,7 @@ import HelpLine from '../../Images/Elements/helpline.png';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import Swal from 'sweetalert2';
 const schema = yup.object({
     name: yup.string().required(),
     number: yup.string().required(),
@@ -18,20 +18,58 @@ const schema = yup.object({
 }).required();
 
 function Contact() {
-
+    const [spinner, setSpinner] = useState(false);
     const { register, handleSubmit, reset } = useForm({
         resolver: yupResolver(schema)
     });
 
     const onSubmit = data => {
-        console.log(data);
+        setSpinner(true);
+        const bodyIs = `
+            Get In Touch
+            <br/>
+            <br/>
+            Name : ${data.name},
+            <br/>
+            Email : ${data.email},
+            <br/>
+            Number : ${data.number},
+            <br/>
+            Message : ${data.message},
+        `;
+
+        // 6cbc34d2-480f-483d-adea-157040d50aa4 ssl
+        const config = {
+            SecureToken: "6cbc34d2-480f-483d-adea-157040d50aa4",
+            To: 'support@techaquarius.com',
+            From: 'techaquariusofficial@gmail.com',
+            Subject: "Get In Touch",
+            Body: bodyIs,
+        }
+
+        if (window.Email) {
+            window.Email.send(config)
+                .then(() => {
+                    setSpinner(false);
+                    Swal.fire(
+                        'Thank You!',
+                        'Our Team Will Contact You Soon!',
+                        'success'
+                    )
+                    reset();
+                })
+                .catch((err) => {
+                    console.log(err);
+                    setSpinner(false);
+                });
+        }
         reset();
     };
 
 
 
     return (
-        <div className='contact-components'>
+        <div className='contact-components' id='contact'>
             <div className="contact-container-left">
 
                 <div className="contact-details-container">
@@ -40,7 +78,7 @@ function Contact() {
 
                         <div className="heading-box">
                             <div className="left-item">
-                                <img src={HelpLine} alt="HelpLine" className='icon-img'/>
+                                <img src={HelpLine} alt="HelpLine" className='icon-img' />
                                 <h3 className="head">Get in</h3>
                             </div>
                             <div className="right-item">
@@ -61,7 +99,7 @@ function Contact() {
                                 </div>
                                 <div className="right-box">
                                     <p className="head">Phone Number</p>
-                                    <p className="content">+91 9732149101</p>
+                                    <p className="content">+91 8595457520</p>
                                 </div>
                             </div>
 
@@ -124,7 +162,7 @@ function Contact() {
                         </div>
 
                         <div className="btn-div">
-                            <button className="submit-btn" type='submit'>SEND</button>
+                            <button className="submit-btn" type='submit'>{spinner ? "Sending..." : 'SEND'}</button>
                         </div>
 
 

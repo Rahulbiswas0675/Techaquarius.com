@@ -6,15 +6,16 @@ import ReviewPage from '../Pages/ReviewPage';
 import ContactPage from '../Pages/ContactPage';
 import FooterPage from '../Pages/FooterPage';
 import ProjectsPage from '../Pages/ProjectsPage';
+
 function MainPage() {
     return (
         <>
             <Navbar />
             <HomePage />
             <AboutPage/>
-            {/* <ProjectsPage /> */}
-            {/* <ReviewPage/> */}
-            {/* <ContactPage /> */}
+            <ProjectsPage />
+            <ReviewPage/>
+            <ContactPage />
             <FooterPage />
         </>
     )

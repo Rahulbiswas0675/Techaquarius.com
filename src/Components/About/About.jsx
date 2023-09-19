@@ -4,7 +4,7 @@ import abtimg from '../../Images/Elements/abou.png';
 import power from '../../Images/Elements/power.png';
 function About() {
     return (
-        <div className='about-components'>
+        <div className='about-components' id='about'>
             <div className="about-container">
                 <div className="left-box">
                     <div className="top-box">

@@ -1,19 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.448a493d.css",
-    "main.js": "/static/js/main.e3ede31f.js",
+    "main.css": "/static/css/main.b3d7ae0f.css",
+    "main.js": "/static/js/main.96706bdc.js",
     "static/js/787.aae768df.chunk.js": "/static/js/787.aae768df.chunk.js",
+    "static/media/energiccrop-about-design.png": "/static/media/energiccrop-about-design.a84dfa5148e50718949f.png",
+    "static/media/energic-hero.png": "/static/media/energic-hero.69679dd1ef17e9322622.png",
+    "static/media/roadserve-hero.png": "/static/media/roadserve-hero.1977824e5c7a634cbd72.png",
+    "static/media/abou.png": "/static/media/abou.5ce3a14ec2b1345ffbce.png",
+    "static/media/ayopark-hero.png": "/static/media/ayopark-hero.76a478af500c6607d153.png",
+    "static/media/ayopark design.png": "/static/media/ayopark design.669912cb7ecf360f6959.png",
     "static/media/hero.png": "/static/media/hero.8027987b604a80458608.png",
+    "static/media/price design.png": "/static/media/price design.94d1997913223b81e3d0.png",
+    "static/media/roadserve road design.png": "/static/media/roadserve road design.039ec449954ee19e132f.png",
+    "static/media/zondra.png": "/static/media/zondra.c10118c161077d6af11f.png",
     "static/media/map.png": "/static/media/map.bc84a14183510de93d20.png",
+    "static/media/contact us design.png": "/static/media/contact us design.10432d0a790888f037e6.png",
+    "static/media/design.png": "/static/media/design.c5099dc69101f70005c0.png",
+    "static/media/dp.png": "/static/media/dp.bef5b157b584f2f7f0ef.png",
     "static/media/NeueMontreal-Medium.otf": "/static/media/NeueMontreal-Medium.15b1070b8dac57958acf.otf",
     "static/media/contactPopup.png": "/static/media/contactPopup.ce7004a2583fccacf9c7.png",
     "index.html": "/index.html",
-    "main.448a493d.css.map": "/static/css/main.448a493d.css.map",
-    "main.e3ede31f.js.map": "/static/js/main.e3ede31f.js.map",
+    "main.b3d7ae0f.css.map": "/static/css/main.b3d7ae0f.css.map",
+    "main.96706bdc.js.map": "/static/js/main.96706bdc.js.map",
     "787.aae768df.chunk.js.map": "/static/js/787.aae768df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.448a493d.css",
-    "static/js/main.e3ede31f.js"
+    "static/css/main.b3d7ae0f.css",
+    "static/js/main.96706bdc.js"
   ]
 }
