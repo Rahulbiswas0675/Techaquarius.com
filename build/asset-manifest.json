@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b3d7ae0f.css",
-    "main.js": "/static/js/main.96706bdc.js",
+    "main.js": "/static/js/main.86aeeb42.js",
     "static/js/787.aae768df.chunk.js": "/static/js/787.aae768df.chunk.js",
     "static/media/energiccrop-about-design.png": "/static/media/energiccrop-about-design.a84dfa5148e50718949f.png",
     "static/media/energic-hero.png": "/static/media/energic-hero.69679dd1ef17e9322622.png",
@@ -21,11 +21,11 @@
     "static/media/contactPopup.png": "/static/media/contactPopup.ce7004a2583fccacf9c7.png",
     "index.html": "/index.html",
     "main.b3d7ae0f.css.map": "/static/css/main.b3d7ae0f.css.map",
-    "main.96706bdc.js.map": "/static/js/main.96706bdc.js.map",
+    "main.86aeeb42.js.map": "/static/js/main.86aeeb42.js.map",
     "787.aae768df.chunk.js.map": "/static/js/787.aae768df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b3d7ae0f.css",
-    "static/js/main.96706bdc.js"
+    "static/js/main.86aeeb42.js"
   ]
 }

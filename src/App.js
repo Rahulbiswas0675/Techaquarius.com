@@ -18,7 +18,7 @@ function App() {
   const [scrolling, setScrolling] = useState(false);
 
   //if celebration is true, then showing celebrate page, other then showing mainpage.
-  const [celebrate, setCelebrate] = useState(true);
+  const [celebrate, setCelebrate] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +61,7 @@ function App() {
         </Router>
 
         {/* for Celebrate page*/}
-        {celebrate ? <Celebration /> : null}
+        {/* {celebrate ? <Celebration /> : null} */}
 
         {/* for contact popup page */}
         {contactPopup ? <ContactPopup /> : null}
